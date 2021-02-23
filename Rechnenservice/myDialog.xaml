@@ -1,0 +1,23 @@
+﻿<Window x:Class="Rechnenservice.myDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rechnenservice"
+        mc:Ignorable="d"
+        Title="Verbinde mit Server" Height="196.167" Width="370.5" WindowStartupLocation="CenterScreen">
+    <Canvas Background="Gainsboro">
+        <Label x:Name="lbIP" Content="IP-Adresse" Canvas.Left="26" Canvas.Top="42"/>
+        <Label x:Name="lbPort" Content="Port" Canvas.Left="274" Canvas.Top="42"/>
+        <TextBox x:Name="tbIp1" Height="23" TextWrapping="Wrap" Text="192" Width="34" Canvas.Left="26" Canvas.Top="73" GotFocus="tbIp1_GotFocus"/>
+        <TextBox x:Name="tbIp2" Height="23" TextWrapping="Wrap" Text="168" Width="34" Canvas.Left="79" Canvas.Top="73" IsUndoEnabled="True" GotFocus="tbIp2_GotFocus"/>
+        <TextBox x:Name="tbIp3" Height="23" TextWrapping="Wrap" Text="178" Width="34" Canvas.Left="126" Canvas.Top="73" GotFocus="tbIp3_GotFocus"/>
+        <TextBox x:Name="tbIp4" Height="23" TextWrapping="Wrap" Text="56" Width="34" Canvas.Left="173" Canvas.Top="73" GotFocus="tbIp4_GotFocus"/>
+        <Label Content="." Canvas.Left="113" Canvas.Top="78"/>
+        <Label Content="." Canvas.Left="160" Canvas.Top="78"/>
+        <Label Content="." Canvas.Left="60" Canvas.Top="78"/>
+        <TextBox x:Name="tbPort" Height="23" TextWrapping="Wrap" Text="10000" Width="41" Canvas.Left="274" Canvas.Top="73" RenderTransformOrigin="0.819,0.174"/>
+        <Button x:Name="btnOk" Content="OK" Width="75" Canvas.Left="26" Canvas.Top="126" Click="btnOk_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" Width="75" Canvas.Left="160" Canvas.Top="126" Click="btnCancel_Click"/>
+    </Canvas>
+</Window>
